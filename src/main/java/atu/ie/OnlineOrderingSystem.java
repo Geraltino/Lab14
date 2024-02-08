@@ -7,7 +7,8 @@ public class OnlineOrderingSystem {
         MenuItem[] menuItems = new MenuItem[]{
          new Burger("Cheese Borgur",10,"Craft's Singles, Beef Patty"),
          new Pizza("PizzaName",12,"nahlol"),
-         new Salad("Ceaser Salad", 8, "Julius Caeser")
+         new Salad("Ceaser Salad", 8, "Julius Caeser"),
+         new Dessert("Sahara",8,"It is a dessert about the desert(Sand)")
 
 };
 
