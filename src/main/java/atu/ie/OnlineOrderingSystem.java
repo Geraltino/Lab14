@@ -1,23 +1,28 @@
 package atu.ie;
 
-import java.awt.*;
 
 public class OnlineOrderingSystem {
     public static void main(String[] args) {
-        // Create an array or list of MenuItem objects
+        // Create an array or list of MenuItem object
         MenuItem[] menuItems = new MenuItem[]{
-        // Add menu items
-        };
+         new Burger("Cheese Borgur",10,"Craft's Singles, Beef Patty"),
+         new Pizza("PizzaName",12,"nahlol"),
+         new Salad("Ceaser Salad", 8, "Julius Caeser")
+
+};
+
 
         // Display details of each menu item
         for (MenuItem menuItem : menuItems){
-            //Print out the name,Description and price for each item
+            System.out.println("Name: "+ menuItem.getName());
+            System.out.println("Description: "+ menuItem.getDescription());
+            System.out.println("Price: €"+ menuItem.getPrice() + "\n");
         }
 
         // Calculate and display the total cost of the order
         double totalCost = 0;
         for (MenuItem menuItem : menuItems){
-            // totalCost of all menuItem prices in an order
+            totalCost += menuItem.getPrice();
         }
         System.out.println("Total Cost: €" + totalCost);
     }

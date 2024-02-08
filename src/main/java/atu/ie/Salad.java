@@ -10,19 +10,24 @@ public class Salad implements MenuItem{
         this.price = price;
         this.ingredients = ingredients;
     }
+    public Salad() {
+        name = "";
+        price = 0;
+        ingredients = "";
+    }
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public double getPrice() {
-        return 0;
+        return price;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return ingredients;
     }
 
 }
